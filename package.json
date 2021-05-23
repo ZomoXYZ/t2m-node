@@ -1,0 +1,22 @@
+{
+  "name": "t2m-node",
+  "version": "1.0.0",
+  "description": "Torrent to Magnet",
+  "main": "src/t2m.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZomoXYZ/t2m-node.git"
+  },
+  "keywords": [
+    "torrent"
+  ],
+  "author": "Ashley Zomo",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/ZomoXYZ/t2m-node/issues"
+  },
+  "homepage": "https://github.com/ZomoXYZ/t2m-node#readme"
+}

@@ -1,1 +1,0 @@
-Use and/or steal to your heart's desire
