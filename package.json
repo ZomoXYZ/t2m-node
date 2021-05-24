@@ -2,9 +2,11 @@
   "name": "t2m-node",
   "version": "1.0.0",
   "description": "Torrent to Magnet",
-  "main": "src/t2m.js",
+  "main": "src/t2m",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf dist",
+    "build": "tsc",
+    "test": "ts-node src/test.ts"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/ZomoXYZ/t2m-node/issues"
   },
-  "homepage": "https://github.com/ZomoXYZ/t2m-node#readme"
+  "homepage": "https://github.com/ZomoXYZ/t2m-node#readme",
+  "devDependencies": {
+    "@types/node": "^15.6.0",
+    "browserify": "^17.0.0",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.1.1"
+  },
+  "dependencies": {
+    "bencode": "^2.0.1"
+  }
 }
