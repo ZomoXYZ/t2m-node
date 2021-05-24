@@ -5,8 +5,8 @@
   "main": "src/t2m",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "tsc",
-    "test": "ts-node src/test.ts"
+    "build": "tsc && browserify src/t2m.js -o src/t2m.web.js",
+    "test": "ts-node tests/test.ts && node tests/test.js"
   },
   "repository": {
     "type": "git",

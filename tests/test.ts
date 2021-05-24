@@ -1,5 +1,5 @@
 import { readFileSync } from 'fs';
-import t2m from './t2m';
+import t2m from '../';
 
 let expected = 'magnet:?xt=urn:btih:eb6354d8d9b9427458af8bee90457101a4c1e8e3&xl=792014848&dn=archlinux-2021.05.01-x86_64.iso';
 console.log(`Expected: ${expected}`);
