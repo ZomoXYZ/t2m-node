@@ -196,6 +196,6 @@ function convert_to_magnet(torrent_content, torrent_name, tracker_mode, uri_enco
 function t2m(torrent_content, torrent_name) {
     return convert_to_magnet(torrent_content, torrent_name, false, true, null, false);
 }
-if (typeof process === 'undefined' && window)
+if (process.title === 'browser')
     window.t2m = t2m;
 module.exports = t2m;
