@@ -10,4 +10,4 @@ console.log("Expected: " + expected);
 var link = __1["default"](fs_1.readFileSync('./tests/archlinux-2021.05.01-x86_64.iso.torrent'), 'archlinux-2021.05.01-x86_64.iso');
 console.log("Received: " + link);
 if (expected !== link)
-    throw "Expected: <" + expected + ">\nReceived: <" + link + ">";
+    throw "Error\nExpected: <" + expected + ">\nReceived: <" + link + ">";

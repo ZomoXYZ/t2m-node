@@ -219,9 +219,7 @@ function t2m(torrent_content: ArrayBuffer, torrent_name: string): string {
     return convert_to_magnet(torrent_content, torrent_name, false, true, null, false);
 }
 
-if (typeof process === 'undefined')
-    require('domready')(function () {
-        (window as any).t2m = t2m;
-    });
+if (typeof process === 'undefined' && window)
+    (window as any).t2m = t2m;
 
 export = t2m;

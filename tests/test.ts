@@ -8,4 +8,4 @@ let link = t2m(readFileSync('./tests/archlinux-2021.05.01-x86_64.iso.torrent'), 
 console.log(`Received: ${link}`);
 
 if (expected !== link)
-    throw `Expected: <${expected}>\nReceived: <${link}>`;
+    throw `Error\nExpected: <${expected}>\nReceived: <${link}>`;
